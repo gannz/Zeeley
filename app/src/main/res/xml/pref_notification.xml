@@ -1,0 +1,102 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+
+    <!-- Allows the user to choose a ringtone in the 'notification' category. -->
+    <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+    <!-- NOTE: RingtonePreference's summary should be set to its value by the activity code. -->
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="conversation_tones"
+        android:summary="play sounds for incoming and outgoing messages"
+        android:title="Conversation tones" />
+    <PreferenceCategory android:title="Message Notifications">
+
+
+    <RingtonePreference
+        android:defaultValue="content://settings/system/notification_sound"
+        android:key="messageNotifications"
+        android:ringtoneType="notification"
+        android:showDefault="true"
+        android:showSilent="true"
+        android:summary=""
+        android:title="Notification tone" />
+
+    <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+    <ListPreference
+        android:defaultValue="default"
+        android:entries="@array/vibrate_entries"
+        android:entryValues="@array/vibrate_entry_values"
+        android:key="messageVibrate"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:summary="default"
+        android:title="vibrate" />
+    <ListPreference
+        android:defaultValue="green"
+        android:entries="@array/ledlight_entries"
+        android:entryValues="@array/ledlight_entry_values"
+        android:key="messageLed"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:summary="Green"
+        android:title="Led Light Color" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Group Notifications">
+        <RingtonePreference
+            android:defaultValue="content://settings/system/notification_sound"
+            android:key="groupNotifications"
+            android:ringtoneType="notification"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:summary=""
+            android:title="Notification tone" />
+        <ListPreference
+            android:defaultValue="default"
+            android:entries="@array/vibrate_entries"
+            android:entryValues="@array/vibrate_entry_values"
+            android:key="groupVibrate"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:summary="default"
+            android:title="vibrate" />
+        <ListPreference
+            android:defaultValue="green"
+            android:entries="@array/ledlight_entries"
+            android:entryValues="@array/ledlight_entry_values"
+            android:key="groupLed"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:summary="Green"
+            android:title="Led Light Color" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Invitation Notifications">
+        <RingtonePreference
+            android:defaultValue="content://settings/system/notification_sound"
+            android:key="invitationNotifications"
+            android:ringtoneType="notification"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:summary=""
+            android:title="Notification tone" />
+        <ListPreference
+            android:defaultValue="default"
+            android:entries="@array/vibrate_entries"
+            android:entryValues="@array/vibrate_entry_values"
+            android:key="invitationVibrate"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:summary="default"
+            android:title="vibrate" />
+        <ListPreference
+            android:defaultValue="green"
+            android:entries="@array/ledlight_entries"
+            android:entryValues="@array/ledlight_entry_values"
+            android:key="invitationLed"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:summary="Green"
+            android:title="Led Light Color" />
+    </PreferenceCategory>
+</PreferenceScreen>

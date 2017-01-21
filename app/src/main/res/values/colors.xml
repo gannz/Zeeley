@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#31435b</color>
+    <color name="colorPrimaryDark">#2c3c51</color>
+    <color name="colorAccent">#009a9a</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="bg">#009a9a</color>
+    <color name="rl">#2c3c51</color>
+    <color name="text">#C3C3E6</color>
+    <color name="colorHead">#363147</color>
+    <color name="gry">#d3d3d3</color>
+    <color name="accent_dark">#ff2929</color>
+    <color name="accent">#ff5252</color>
+    <color name="senderName">#31435b</color>
+    <color name="secondary_text">#727272</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_overlay">#F3F3F3</color>
+    <color name="cab">#838E9C</color>
+    <color name="mycolor">#80009a9a</color>
+</resources>

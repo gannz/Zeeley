@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_view"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.zeeley.chatactivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:id="@+id/actionbar_icon"
+                android:src="@drawable/userimg"
+                app:civ_border="false"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="NAME"
+                android:id="@+id/actionbar_title" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:listSelector="@drawable/zeeley_widgets_list_selector_holo_light"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+        >
+        <ImageView
+            android:id="@+id/emoji_btn"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:padding="4dp"
+            android:src="@drawable/smiley"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+
+
+            >
+
+            <github.ankushsachdeva.emojicon.EmojiconEditText
+                android:id="@+id/emojicon_edit_text"
+                android:layout_width="match_parent"
+
+                android:padding="8dp"
+                android:inputType="textMultiLine"
+                android:paddingLeft="15dp"
+                android:hint="Enter Message"
+                android:background="#00000000"
+                android:layout_height="match_parent"
+                emojicon:emojiconSize="28sp" />
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/submit_btn"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_action_send_now"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+
+
+</LinearLayout>

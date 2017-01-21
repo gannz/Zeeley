@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vibrate_entries">
+        <item>Turn off</item>
+        <item>Default</item>
+        <item>Short</item>
+        <item>Long</item>
+    </string-array>
+    <string-array name="vibrate_entry_values">
+        <item>turnoff</item>
+        <item>default</item>
+        <item>short</item>
+        <item>long</item>
+    </string-array>
+    <string-array name="ledlight_entries">
+        <item>Green</item>
+        <item>Red</item>
+        <item>Yellow</item>
+        <item>Blue</item>
+        <item>Purple</item>
+
+    </string-array>
+    <string-array name="ledlight_entry_values">
+        <item>green</item>
+        <item>red</item>
+        <item>yellow</item>
+        <item>blue</item>
+        <item>purple</item>
+
+    </string-array>
+    <string-array name="last_seen">
+        <item>Everyone</item>
+        <item>Nobody</item>
+    </string-array>
+    <string-array name="lastseen_values">
+        <item>Everyone</item>
+        <item>Nobody</item>
+    </string-array>
+    <string-array name="fontsize_values">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+    <string-array name="fontsize">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+    <string-array name="profilePhoto_values">
+        <item>unblockedPeople</item>
+        <item>nobody</item>
+    </string-array>
+    <string-array name="profilePhoto">
+        <item>Unblocked people</item>
+        <item>Nobody</item>
+    </string-array>
+
+</resources>

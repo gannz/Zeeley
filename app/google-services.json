@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "680131817990",
+    "firebase_url": "https://zeeley-28ff7.firebaseio.com",
+    "project_id": "zeeley-28ff7",
+    "storage_bucket": "zeeley-28ff7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680131817990:android:a7f07a6f400fdad9",
+        "android_client_info": {
+          "package_name": "com.zeeley"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680131817990-d5rlhunjkbgjfpkrrlaibt8sc6ng4rhl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXvkst7OzrqBuBif12ma3L-DYm1aTtAbw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

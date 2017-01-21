@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="chats">Chats</string>
+    <string name="viewprofile">View Profile</string>
+    <string name="remove">Remove from list</string>
+    <string name="mute">Mute</string>
+    <string name="title_activity_show_interest">Show Interest</string>
+    <string name="travel">Travel</string>
+    <string name="viewgrpinfo">Group info</string>
+    <string name="exit">Exit group</string>
+    <string name="locate">Locate on Map</string>
+    <string name="forms">Forms</string>
+    <string name="gameform">Game Form</string>
+    <string name="quickyform">Quicky Form</string>
+    <string name="movieform">Movie Form</string>
+</resources>

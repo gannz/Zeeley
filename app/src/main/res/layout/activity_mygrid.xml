@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        >
+
+        <com.zeeley.DeleteDropZoneView
+            android:id="@+id/delete_view"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:paddingLeft="50dp"
+            android:paddingRight="55dp"
+            android:text="@string/remove" />
+
+        <Button
+            android:id="@+id/addMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/zeeley_widgets_btn_default_holo_light"
+            android:layout_alignParentRight="true"
+            android:text="Add More" />
+    </RelativeLayout>
+
+    <com.zeeley.DraggableGridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        />
+</LinearLayout>

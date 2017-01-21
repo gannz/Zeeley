@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zeeley">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".myApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/zeeley_widgets">
+        <activity
+            android:name=".splashActivity"
+            android:label="@string/title_activity_splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".my_login1" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".chatactivity" />
+        <activity
+            android:name=".my_login2"
+            android:label="@string/title_activity_my_login2" />
+        <activity
+            android:name=".userProfile"
+            android:label="@string/title_activity_profile" />
+        <activity
+            android:name=".MyProfile"
+            android:label="@string/title_activity_my_profile" />
+        <activity
+            android:name=".EditProfile"
+            android:label="@string/title_activity_edit_profile"
+            android:parentActivityName=".MyProfile">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zeeley.MyProfile" />
+        </activity>
+        <activity
+            android:name=".Interest"
+            android:label="@string/title_activity_interest">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zeeley.MainActivity" />
+        </activity>
+        <activity
+            android:name=".profile_photo"
+            android:label="@string/title_activity_profile_photo">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".userProfile" />
+        </activity>
+        <activity
+            android:name=".Howitworks"
+            android:label="@string/title_activity_howitworks" />
+
+        <service
+            android:name=".Background_Service"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".forward"
+            android:label="@string/title_activity_forward" />
+        <activity android:name=".InterestAdder" />
+
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".notifications"
+            android:label="@string/title_activity_notifications"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zeeley.MainActivity" />
+        </activity>
+        <activity
+            android:name=".showInterest"
+            android:label="@string/title_activity_show_interest"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zeeley.MainActivity" />
+        </activity>
+        <activity
+            android:name=".changePassword"
+            android:label="@string/title_activity_change_password"
+            android:parentActivityName=".settings">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zeeley.settings" />
+        </activity>
+        <activity
+            android:name=".settings"
+            android:label="@string/settings" />
+        <activity
+            android:name=".form_travel"
+            android:label="@string/title_activity_travel_form"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".form_restaurant"
+            android:label="@string/restaurantform"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".form_game"
+            android:label="@string/gameform"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".form_quicky"
+            android:label="@string/quickyform"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".form_movie"
+            android:label="@string/movieform"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".blockedContacts"
+            android:label="@string/title_activity_blocked_contacts" />
+        <activity
+            android:name=".groupProfile"
+            android:label="@string/title_activity_group_profile" />
+        <activity
+            android:name=".mygridActivity"
+            android:label="Change  Interest"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".Interst_List"
+            android:label="@string/title_activity_interst__list" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:enabled="true"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".NetWatcher"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- facebook login -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutandHelp"
+            android:label="@string/title_activity_aboutand_help" />
+        <activity
+            android:name=".Feedback"
+            android:label="@string/title_activity_feedback" />
+        <activity
+            android:name=".About"
+            android:label="@string/title_activity_about" />
+        <activity
+            android:name=".groupChatScreen"
+            android:label="@string/title_activity_ghroup_chat_screen" />
+
+        <receiver
+            android:name=".invitationReciever"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="acceptaction" />
+                <action android:name="accept" />
+                <action android:name="reject" />
+                <action android:name="downloadprofileaction" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".invitationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".tripDetails"
+            android:label="@string/title_activity_trip_details" />
+        <activity
+            android:name=".form_details_cab"
+            android:label="@string/title_activity_cab_form_details" />
+        <activity
+            android:name=".form_details_game"
+            android:label="@string/title_activity_game_form_details" />
+        <activity
+            android:name=".form_details_quicky"
+            android:label="@string/title_activity_quicky_form_details" />
+        <activity
+            android:name=".form_details_travel"
+            android:label="@string/title_activity_travel_form_details" />
+        <activity
+            android:name=".form_details_restaurant"
+            android:label="@string/title_activity_restaurant_form_details" />
+        <activity
+            android:name=".form_details_movie"
+            android:label="@string/title_activity_movie_form_details" />
+        <activity
+            android:name=".form_cab"
+            android:label="@string/title_activity_cab_form"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".newgroup"
+            android:label="@string/title_activity_newgroup"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zeeley.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

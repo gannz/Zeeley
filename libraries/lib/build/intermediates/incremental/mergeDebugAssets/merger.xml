@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="F:\playlist\Zeeley\libraries\lib\assets"/><source path="F:\playlist\Zeeley\libraries\lib\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="F:\playlist\Zeeley\libraries\lib\src\debug\assets"/></dataSet></merger>

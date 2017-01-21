@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="zeeley_widgets" parent="@style/_zeeley_widgets"/>
+
+  <style name="_zeeley_widgets" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionModeOverlay">true</item>
+
+    <item name="android:editTextStyle">@style/EditTextzeeley_widgets</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewzeeley_widgets</item>
+
+    <item name="android:checkboxStyle">@style/CheckBoxzeeley_widgets</item>
+
+    <item name="android:radioButtonStyle">@style/RadioButtonzeeley_widgets</item>
+
+    <item name="android:buttonStyle">@style/Buttonzeeley_widgets</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonzeeley_widgets</item>
+
+    <item name="android:spinnerStyle">@style/Spinnerzeeley_widgets</item>
+
+    <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemzeeley_widgets</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarzeeley_widgets</item>
+
+    <item name="android:buttonStyleToggle">@style/Togglezeeley_widgets</item>
+
+    <item name="android:listViewStyle">@style/ListViewzeeley_widgets</item>
+
+    <item name="android:listViewWhiteStyle">@style/ListViewzeeley_widgets.White</item>
+
+    <item name="android:spinnerItemStyle">@style/SpinnerItemzeeley_widgets</item>
+
+  </style>
+
+</resources>

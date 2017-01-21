@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bubble_layout_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/bubble_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bubble1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/senderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jay patel"
+            android:textColor="@android:color/holo_purple"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <github.ankushsachdeva.emojicon.EmojiconTextView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/message_text"
+                android:layout_width="match_parent"
+                android:hint="messga"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                emojicon:emojiconSize="28sp" />
+
+
+            <TextView
+                android:id="@+id/time"
+                android:paddingTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:text="babdi" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

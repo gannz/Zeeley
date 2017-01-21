@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/profile"
+        android:orderInCategory="30"
+        android:title="@string/viewprofile"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/remove"
+        android:orderInCategory="40"
+        android:title="@string/remove"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/block"
+        android:orderInCategory="60"
+        android:title="@string/block"
+        app:showAsAction="never"
+        />
+
+
+</menu>

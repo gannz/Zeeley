@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="EditTextzeeley_widgets" parent="android:Widget.EditText">
+	  <item name="android:background">@drawable/zeeley_widgets_edit_text_holo_light</item>
+	  <item name="android:textColor">#000000</item>
+  </style>
+
+  <style name="AutoCompleteTextViewzeeley_widgets" parent="android:Widget.AutoCompleteTextView">
+      <item name="android:dropDownSelector">@drawable/zeeley_widgets_list_selector_holo_light</item>
+	  <item name="android:background">@drawable/zeeley_widgets_edit_text_holo_light</item>
+	  <item name="android:textColor">#000000</item>
+  </style>
+
+  <style name="CheckBoxzeeley_widgets" parent="android:Widget.CompoundButton.CheckBox">
+      <item name="android:button">@drawable/zeeley_widgets_btn_check_holo_light</item>
+  </style>
+
+  <style name="RadioButtonzeeley_widgets" parent="android:Widget.CompoundButton.RadioButton">
+      <item name="android:button">@drawable/zeeley_widgets_btn_radio_holo_light</item>
+  </style>
+
+  <style name="Buttonzeeley_widgets" parent="android:Widget.Button">
+	  <item name="android:background">@drawable/zeeley_widgets_btn_default_holo_light</item>
+
+	  <item name="android:textColor">#d9e5f3</item>
+  </style>
+
+  <style name="ImageButtonzeeley_widgets" parent="android:Widget.ImageButton">
+	  <item name="android:background">@drawable/zeeley_widgets_btn_default_holo_light</item>
+  </style>
+
+  <style name="Spinnerzeeley_widgets" parent="android:Widget.Spinner">
+      <item name="android:background">@drawable/zeeley_widgets_spinner_background_holo_light</item>
+      <item name="android:dropDownSelector">@drawable/zeeley_widgets_list_selector_holo_light</item>
+  </style>
+
+  <style name="SpinnerDropDownItemzeeley_widgets" parent="android:Widget.DropDownItem.Spinner">
+      <item name="android:checkMark">@drawable/zeeley_widgets_btn_radio_holo_light</item>
+  </style>
+  <style name="ProgressBarzeeley_widgets" parent="android:Widget.ProgressBar.Horizontal">
+      <item name="android:progressDrawable">@drawable/zeeley_widgets_progress_horizontal_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/zeeley_widgets_progress_indeterminate_horizontal_holo_light</item>
+      <item name="android:minHeight">16dip</item>
+      <item name="android:maxHeight">16dip</item>
+  </style>
+
+  <style name="Togglezeeley_widgets" parent="android:Widget.Button.Toggle">
+      <item name="android:background">@drawable/zeeley_widgets_btn_toggle_holo_light</item>
+      <item name="android:minHeight">48dip</item>
+	  <item name="android:textColor">#000000</item>
+  </style>
+
+  <style name="ListViewzeeley_widgets" parent="android:Widget.ListView">
+      <item name="android:listSelector">@drawable/zeeley_widgets_list_selector_holo_light</item>
+  </style>
+
+  <style name="ListViewzeeley_widgets.White" parent="android:Widget.ListView.White">
+      <item name="android:listSelector">@drawable/zeeley_widgets_list_selector_holo_light</item>
+  </style>
+
+  <style name="SpinnerItemzeeley_widgets" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+      <item name="android:textColor">#000000</item>
+  </style>
+
+</resources>
